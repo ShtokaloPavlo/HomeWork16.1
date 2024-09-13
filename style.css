@@ -5,14 +5,13 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #4caf50; /* Зелений фон, як на зображенні */
-}
+  background-color: #4caf50; 
 
 .container {
   position: relative;
   width: 1000px;
   height: 600px;
-  background-color: #2e7d32; /* Темніший зелений */
+  background-color: #2e7d32; 
 }
 
 .top-border,
@@ -66,18 +65,17 @@ body {
 
 .card {
   position: relative;
-  padding-left: 50px; /* Відступ для зображення */
+  padding-left: 50px; 
 }
 
-/* Псевдоелемент ::before для додавання картинки */
 .card::before {
   content: '';
   position: absolute;
-  top: 0; /* Позиція відносно верхньої частини картки */
-  left: 0; /* Позиція відносно лівої частини картки */
-  width: 40px; /* Ширина зображення */
-  height: 40px; /* Висота зображення */
-  background-image: url('path-to-your-image.png'); /* Шлях до зображення */
-  background-size: cover; /* Забезпечує масштабування зображення для повного покриття елемента */
-  background-repeat: no-repeat; /* Зображення не повторюється */
+  top: 0; 
+  left: 0; 
+  width: 40px; 
+  height: 40px; 
+  background-image: url('path-to-your-image.png'); 
+  background-size: cover; 
+  background-repeat: no-repeat; 
 }
