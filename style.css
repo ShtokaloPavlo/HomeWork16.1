@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #4caf50; /* Зелений фон, як на зображенні */
+}
+
+.container {
+  position: relative;
+  width: 1000px;
+  height: 600px;
+  background-color: #2e7d32; /* Темніший зелений */
+}
+
+.top-border,
+.bottom-border {
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  background-image: url("https://www.freeiconspng.com/uploads/lamp-png-0.png");
+  background-size: contain;
+  background-repeat: repeat-x;
+}
+
+.top-border {
+  top: 0;
+}
+
+.bottom-border {
+  bottom: 0;
+  background-image: url("https://www.freeiconspng.com/uploads/grass-png-images-pictures-transparent-28.png");
+}
+
+.left-border,
+.right-border {
+  position: absolute;
+  width: 50px;
+  height: 100%;
+  background-size: contain;
+  background-repeat: repeat-y;
+}
+
+.left-border {
+  left: 0;
+  background-image: url("https://vignette.wikia.nocookie.net/mashaandthebear/images/e/e0/Ёжик.png/revision/latest?cb=20180209130328&path-prefix=ru");
+}
+
+.right-border {
+  right: 0;
+  background-image: url("https://avatanplus.com/files/resources/mid/58eb07b830eab15b56162788.png");
+}
+
+.main-image {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  width: 800px;
+  height: 400px;
+  background-image: url("https://img2.goodfon.ru/wallpaper/big/0/5b/pole-zelen-trava-dom-derevya.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.card {
+  position: relative;
+  padding-left: 50px; /* Відступ для зображення */
+}
+
+/* Псевдоелемент ::before для додавання картинки */
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0; /* Позиція відносно верхньої частини картки */
+  left: 0; /* Позиція відносно лівої частини картки */
+  width: 40px; /* Ширина зображення */
+  height: 40px; /* Висота зображення */
+  background-image: url('path-to-your-image.png'); /* Шлях до зображення */
+  background-size: cover; /* Забезпечує масштабування зображення для повного покриття елемента */
+  background-repeat: no-repeat; /* Зображення не повторюється */
+}
